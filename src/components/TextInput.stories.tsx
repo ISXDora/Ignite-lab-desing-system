@@ -14,15 +14,18 @@ export default {
     
     },
   argTypes: {
+    children :{
+      table: {
+        disable: true
+      }
+     }
   }
 } as Meta<TextInputRootProps>
 
-export const Default: StoryObj<TextInputRootProps> = {
-  argTypes: {
-    children :{
-     table: {
-       disable: true
-     }
-    }
+export const Default: StoryObj<TextInputRootProps> = {}
+
+export const WithoutIcon: StoryObj<TextInputRootProps> = {
+  args: {
+    children:  <TextInput.Input placeholder="Esse texto é um placeholder" />
   }
 }
