@@ -1,4 +1,6 @@
+import { Button } from './components/Button'
 import { Text } from './components/Text'
+import { TextInput } from './components/TextInput'
 import './styles/global.css'
 export function App() {
 
